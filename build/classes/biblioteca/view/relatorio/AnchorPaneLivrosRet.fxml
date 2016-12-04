@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPaneVisualizar" prefHeight="323.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biblioteca.controller.relatorio.AnchorPaneLivrosRetController">
+   <children>
+      <TableView fx:id="tableViewLivro" layoutX="173.0" layoutY="46.0" prefHeight="329.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="tableColumnLivroISBN" prefWidth="72.0" text="ISBN" />
+          <TableColumn fx:id="tableColumnLivroNome" prefWidth="283.0" text="Título (top 4)" />
+            <TableColumn fx:id="tableColumnLivroAno" minWidth="0.0" prefWidth="118.0" text="Ano" />
+            <TableColumn fx:id="tableColumnLivroRetiradas" minWidth="0.0" prefWidth="126.0" text="Vezes Retirados" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
